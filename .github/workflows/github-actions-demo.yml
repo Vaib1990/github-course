@@ -7,13 +7,13 @@ on:
 
 jobs:
   demo:
-    runs_on: ubuntu
+    runs-on: ubuntu
     steps:
       - uses: action/checkout@v4
       - run: echo "Hello Everyone"
 
   list:
-    runs_on: ubuntu
+    runs-on: ubuntu
     steps:
       - uses: action/checkout@v4
       - run: ls -la
