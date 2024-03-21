@@ -1,0 +1,21 @@
+name: My first demo
+
+on:
+  workflow_dispatch:
+  #schedule:
+  #  - cron: "*15***"
+  push:
+    branches: [main]
+
+jobs:
+  demo:
+    runs_on: ubuntu
+    steps:
+      - uses: action/checkout@v4
+      - run: echo "Hello Everyone"
+
+  list:
+    runs_on: ubuntu
+    steps:
+      - uses: action/checkout@v4
+      - run: ls -la
